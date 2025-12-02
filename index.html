@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Strong Password Generator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<h1>🔐 Strong Password Generator</h1>
+
+
+<div class="card">
+<label for="length">Password length: <span id="length-value">16</span></label>
+<input id="length" type="range" min="6" max="32" value="16" />
+
+
+<div class="options">
+<label><input type="checkbox" id="upper" checked /> Uppercase (A-Z)</label>
+<label><input type="checkbox" id="lower" checked /> Lowercase (a-z)</label>
+<label><input type="checkbox" id="numbers" checked /> Numbers (0-9)</label>
+<label><input type="checkbox" id="symbols" checked /> Symbols (!@#$...)</label>
+</div>
+
+
+<div class="output-row">
+<input id="password" readonly />
+<button id="copyBtn" title="Copy password">Copy</button>
+</div>
+
+
+<div class="actions">
+<button id="generate">Generate</button>
+<button id="saveNotes">Save to file</button>
+</div>
+
+
+<p class="note">Tip: Use the copy button to paste the password where you need it.</p>
+</div>
+
+
+<footer>
+<small>Built by Ayush Nigam • Micro-Tool for AI For Bharat Week 1</small>
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
